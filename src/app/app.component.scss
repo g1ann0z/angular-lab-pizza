@@ -15,3 +15,83 @@ h4 {
 h2 {
     font-size: 3rem;
 }
+
+table {
+    border: 1px solid lightgray;
+    width: 300px;
+}
+
+table td, table th {
+    padding: 4px;
+    text-align: left;
+}
+
+table th {
+    background-color: white;
+    color: #8C2703;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.container section {
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.section-title {
+    color: #0371A6;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.separator {
+    width: 100px;
+    height: 4px;
+    background-color: #c1922e;
+    margin: 0 auto;
+}
+
+a {
+    color: #730217;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c80125;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #8C2703;
+    color: white;
+}
+
+table {
+    border: 1px solid lightgray;
+    width: 80%;
+}
+
+table td, table th {
+    padding: 4px;
+    text-align: left;
+}
+
+table th {
+    background-color: white;
+    color: #8C2703;
+}
+
+input[type="submit"] {
+    margin: 8px 0;
+    background-color: #0371A6;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
