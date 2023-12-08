@@ -15,7 +15,7 @@ export class MenuComponent {
   piatti: Piatto[] = [
     {
       "id": 1,
-      "category": "antipasti di terra",
+      "category": "antipasti",
       "title": "Tagliere di salumi",
       "description": "Un assortimento di salumi regionali ed extraregionali.",
       "imageUrl": "https://michelefenu.github.io/tnv-academy-XI/the-net-pizza-bootstrap/assets/images/tagliere-salumi.jpg",
@@ -41,7 +41,7 @@ export class MenuComponent {
     },
     {
       "id": 2,
-      "category": "antipasti di mare",
+      "category": "antipasti",
       "title": "Antipasto di Mare",
       "description": "Una selezione di antipasti tradizionali a base di pesce.",
       "imageUrl": "https://michelefenu.github.io/tnv-academy-XI/the-net-pizza-bootstrap/assets/images/antipasto-mare.jpg",
@@ -67,7 +67,7 @@ export class MenuComponent {
     },
     {
       "id": 3,
-      "category": "antipasti di mare",
+      "category": "antipasti",
       "title": "Zuppa di Mare",
       "description": "Zuppa di cozze e arselle su crostini piccanti.",
       "imageUrl": "https://michelefenu.github.io/tnv-academy-XI/the-net-pizza-bootstrap/assets/images/zuppa-mare.jpg",
