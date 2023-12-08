@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MenuItemComponent } from '../menu-item/menu-item.component';
+import { __importDefault } from 'tslib';
+import { Piatto } from '../../models/Piatto';
 
 
 @Component({
@@ -12,6 +14,6 @@ import { MenuItemComponent } from '../menu-item/menu-item.component';
 })
 export class MenuSectionComponent {
   @Input() sectionTitle = '';
-
+  @Input() sectionMenuItems: Piatto[] = [];
 
 }
