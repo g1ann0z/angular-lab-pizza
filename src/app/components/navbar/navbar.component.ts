@@ -1,13 +1,17 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { ApiService } from '../../services/api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'gnnz-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [HttpClientModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
-
+export class NavbarComponent{
+  constructor(public apiService: ApiService){
+    
+  }
+  
 }

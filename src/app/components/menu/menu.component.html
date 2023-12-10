@@ -1,14 +1,14 @@
 <div class="container">
-    <section class="menu">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="section-title">I Nostri Piatti</h2>
-          <div class="separator"></div>
-        </div>
+  <section class="menu">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">I Nostri Piatti</h2>
+        <div class="separator"></div>
       </div>
+    </div>
 
-      <gnnz-menu-section [sectionMenuItems]="antipastiItems" sectionTitle="Antipasti"></gnnz-menu-section>
-      <gnnz-menu-section [sectionMenuItems]="primiItems" sectionTitle="Primi"></gnnz-menu-section>
-      <gnnz-menu-section [sectionMenuItems]="dolciItems" sectionTitle="Dolci"></gnnz-menu-section>
-    </section>
-  </div>
+    <gnnz-menu-section *ngFor="let piattiCategory of piattiCategories" [sectionMenuItems]="piattiCategory"
+      [sectionTitle]="piattiCategory[0]?.category || ''"></gnnz-menu-section>
+
+  </section>
+</div>
