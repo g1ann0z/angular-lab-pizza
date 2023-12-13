@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'gnnz-menu',
   standalone: true,
-  imports: [CommonModule, MenuSectionComponent, HttpClientModule],
+  imports: [CommonModule, MenuSectionComponent],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
@@ -18,7 +18,11 @@ export class MenuComponent implements OnChanges {
 
   ngOnChanges() {
 
+    console.log('aksjdlakdjlaskdjal')
+
     const categories = [...new Set(this.menu.map(x => x.category))];
+
+    
 
     for (let category of categories) {
       this.piattiCategories.push(this.menu.filter(x => x.category === category))
